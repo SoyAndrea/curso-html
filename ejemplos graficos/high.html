@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Highcharts - Líneas con etiquetas</title>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+  </head>
+  <body>
+
+    <div id="container" style="width: 80%; height: 400px; margin: auto;"></div>
+
+    <script>
+      Highcharts.chart('container', {
+        title: {
+          text: 'Promedio de temperatura mensual'
+        },
+
+        subtitle: {
+          text: 'Fuente: WorldClimate.com'
+        },
+
+        yAxis: {
+          title: {
+            text: 'Temperatura (°C)'
+          }
+        },
+
+        xAxis: {
+          accessibility: {
+            rangeDescription: 'Meses del año'
+          },
+          categories: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic']
+        },
+
+        legend: {
+          enabled: false
+        },
+
+        plotOptions: {
+          series: {
+            label: {
+              connectorAllowed: false
+            },
+            pointStart: 0
+          }
+        },
+
+        series: [{
+          name: 'Tokio',
+          data: [7.0, 6.9, 9.5, 14.5, 18.4, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+        }, {
+          name: 'Nueva York',
+          data: [-0.2, 0.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+        }, {
+          name: 'Berlín',
+          data: [-0.9, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
+        }, {
+          name: 'Londres',
+          data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+        }]
+      });
+    </script>
+
+  </body>
+</html>

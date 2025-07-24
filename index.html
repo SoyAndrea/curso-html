@@ -1,58 +1,141 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Galería de Imágenes - ARcenso</title>
-</head>
-<body bgcolor="#F5F5F5" style="padding: 20px;">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DAta viz by Andre</title>
+  <!-- Fuente Montserrat desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdfdfd;
+      color: #333;
+    }
 
-  <!-- Encabezado con estilo -->
-  <header style="background-color: #A7C7E7; padding: 15px;">
-    <h1 style="color: #2C3E50; font-family: 'Segoe UI', sans-serif; padding: 10px;">
-      Galería de imágenes de <span style="color: #632EFC;">ARcenso</span>
-    </h1>
+    header {
+      background-color: #4e79a7;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    nav {
+      background-color: #e0e0e0;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #4e79a7;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #2f4b7c;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem 1rem;
+      gap: 2rem;
+    }
+
+    .section-card {
+      background-color: #f0f4f8;
+      border-radius: 50px;
+      padding: 2rem 3rem;
+      max-width: 600px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .section-card:hover {
+      transform: scale(1.02);
+    }
+
+    .section-card h2 {
+      margin-bottom: 0.5rem;
+      color: #4e79a7;
+    }
+
+    .section-card a {
+      text-decoration: none;
+      color: #2f4b7c;
+      font-weight: 600;
+    }
+
+    footer {
+      background-color: #4e79a7;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: underline;
+    }
+
+    footer a:hover {
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Data to Viz by Andre</h1>
   </header>
 
-  <!-- Sección principal -->
-  <section>
-    <div style="background-color: #FFFFFF; padding: 20px; text-align: center;">
+  <nav>
+    <a href="graficos.html">Gráficos</a>
+    <a href="tablas.html">Tablas</a>
+    <a href="mapas.html">Mapas</a>
+  </nav>
 
-      <!-- Primer artículo -->
-      <article>
-        <img src="https://soyandrea.github.io/image/arcenso.png" 
-             alt="hex del paquete arcenso" 
-             width="300" 
-             style="margin: 5px;">
-      </article>
-
-      <!-- Segundo artículo -->
-      <article>
-        <img src="https://pbs.twimg.com/media/GfWWE-OWkAAMGIe?format=jpg&name=900x900" 
-             alt="Presentación en Buenos Aires del paquete ARcenso" 
-             width="300" 
-             style="margin: 5px;">
-      </article>
-
-      <!-- Tercer artículo -->
-      <article>
-        <img src="https://soyandrea.github.io/conoce-arcenso/2024-renred-buenosaires/flyer.png" 
-             alt="Flyer de difusión del evento de presentación de arcenso" 
-             width="300" 
-             style="margin: 5px;">
-      </article>
-
-      <!-- Párrafo con fondo en parte del texto -->
-      <p style="font-family: sans-serif; font-size: 16px;">
-        <strong>arcenso</strong> es un paquete de datos en R que pone al alcance información del Censo de Población argentino de los años 1970 y 1980, tanto a nivel nacional como para las 24 jurisdicciones. De código abierto y pensado para la reproducibilidad, permite explorar de forma clara, accesible y con herramientas libres los datos de población de Argentina. <span style="background-color: #FFF176;">¡Una herramienta de software libre pensada para quienes trabajan con datos censales</span>
-     </p>
-
+  <div class="container">
+    <div class="section-card">
+      <h2>Gráficos</h2>
+      <p><a href="graficos.html">Visualizá la información a través de gráficos claros y efectivos.</a></p>
     </div>
-  </section>
 
-  <!-- Pie de página -->
-  <footer style="background-color: #2C3E50; color: white; padding: 15px; text-align: center; font-family: 'Segoe UI', sans-serif;">
-    <p>© 2025 ARcenso – Visitá el proyecto en <a href="https://github.com/soyandrea/arcenso" target="_blank" style="color: #FFD700;">GitHub</a></p>
+    <div class="section-card">
+      <h2>Tablas</h2>
+      <p><a href="tablas.html">Organizá y presentá datos en tablas legibles y limpias.</a></p>
+    </div>
+
+    <div class="section-card">
+      <h2>Mapas</h2>
+      <p><a href="mapas.html">Explorá los datos geográficos con visualizaciones espaciales.</a></p>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Andrea Gomez Vargas. Licencia: 
+    <a href="https://creativecommons.org/licenses/by-nd/4.0/deed.es" target="_blank">
+      Creative Commons Atribución - Sin Derivadas 4.0 Internacional (CC BY-ND 4.0)
+    </a>.
+    <br>
+    Este sitio tiene fines exclusivamente educativos y expositivos.
   </footer>
-
 </body>
 </html>

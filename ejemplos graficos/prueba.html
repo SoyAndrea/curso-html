@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+
+<html lang="en">        
+<head>
+  <meta charset="UTF-8">
+  <title>Image Gallery - ARcenso</title>
+   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+</head>
+<body bgcolor="#F5F5F5" style="padding: 20px;">
+    
+      <div id="grafico"></div>
+
+  <script>
+    var datos = [{
+      x: [1, 2, 3, 4],
+      y: [10, 15, 13, 17],
+      type: 'scatter'
+    }];
+
+    Plotly.newPlot('grafico', datos);
+  </script>
+</body>
+
+
+</html>
