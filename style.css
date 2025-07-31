@@ -1,0 +1,158 @@
+/* Base */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+/* Header y Footer */
+header, footer {
+  background-color: #4e79a7;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+footer {
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+
+/* Navegación */
+nav {
+  background-color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #4e79a7;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #2f4b7c;
+}
+
+/* Contenido general */
+.container {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+/* Gráficos */
+.grafico {
+  background-color: #f0f4f8;
+  border-radius: 20px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+.grafico img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.grafico-full {
+  grid-column: 1 / -1;
+  max-width: 90%;
+}
+
+.grafico iframe {
+  width: 100%;
+  height: 600px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Tarjetas de sección (si usás en index) */
+.section-card {
+  background-color: #f0f4f8;
+  border-radius: 50px;
+  padding: 2rem 3rem;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.section-card:hover {
+  transform: scale(1.02);
+}
+
+.section-card h2 {
+  margin-bottom: 0.5rem;
+  color: #4e79a7;
+}
+
+.section-card a {
+  text-decoration: none;
+  color: #2f4b7c;
+  font-weight: 600;
+}
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.lightbox:target {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #000;
+}
+
+.lightbox a.close {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  font-size: 3rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 10001;
+}
+.lightbox a.close:hover {
+  color: #ff6347;
+}
