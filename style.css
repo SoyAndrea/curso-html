@@ -67,7 +67,7 @@ nav a:hover {
 
 /* Gráficos */
 .grafico {
-  background-color: #f0f4f8;
+  background-color: #669bbc;
   border-radius: 20px;
   padding: 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -156,3 +156,49 @@ nav a:hover {
 .lightbox a.close:hover {
   color: #ff6347;
 }
+
+main {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem; /* espacio entre tarjetas */
+  }
+
+  .section-card {
+    background-color: #003366; /* azul oscuro */
+    color: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+  }
+
+  .section-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .section-card h2 {
+    margin-bottom: 0.8rem;
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  .section-card a {
+    color: #ccddff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+    .section-card a:hover {
+    text-decoration: underline;
+  }
+  html, body {
+  height: 100%;
+  margin: 0;
+}
+
