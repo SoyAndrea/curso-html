@@ -17,14 +17,72 @@
   <nav>
     <a href="index.html">Inicio</a>
     <a href="graficos.html">Gráficos</a>
-    <a href="tablas.html">Mapas</a>
+    <a href="tablas.html">Tablas</a>
   </nav>
   <br>
-  <h2>Mapas en R </h2>
+  <h2>Mapas en QGIS & ggplot2 </h2>
   <div class="container">
     <!-- Insertar todos los gráficos -->
-
+     <div class="grafico"><img src="data-viz/mapas/map3.jpg" alt="mapa AMBA"></div> 
+     <div class="grafico"><img src="data-viz/mapas/mapa_densidad.png" alt="mapa AMBA"></div> 
   </div>
+<h2>  Mapa insteractivo con ggplot2 +  ggiraph </h2>
+     <div class="grafico grafico-full">
+      <iframe src="data-viz/mapas/mapa_interactivo.html" title="Gráfico 1"></iframe>
+    </div>
+
+<h3> Comparativa entre herramientas de Software </h3>
+<table>
+  <thead>
+    <tr>
+      <th>Característica</th>
+      <th>QGIS</th>
+      <th>ggplot2 (R)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tipo de herramienta</td>
+      <td>Software de escritorio GIS (Interfaz gráfica)</td>
+      <td>Paquete de visualización en R (programación)</td>
+    </tr>
+    <tr>
+      <td>Facilidad para usuarios sin programación</td>
+      <td>Alta (interfaz visual, arrastrar y soltar)</td>
+      <td>Baja (requiere conocimientos de R y código)</td>
+    </tr>
+    <tr>
+      <td>Flexibilidad y personalización</td>
+      <td>Buena, con plugins y estilos visuales</td>
+      <td>Muy alta, con programación y control total</td>
+    </tr>
+    <tr>
+      <td>Integración con análisis estadístico</td>
+      <td>Limitada (herramientas GIS básicas)</td>
+      <td>Alta (integrado con todo el ecosistema R)</td>
+    </tr>
+    <tr>
+      <td>Capacidad para reproducibilidad</td>
+      <td>Media (se pueden guardar proyectos, pero menos automatizable)</td>
+      <td>Alta (scripts reproducibles y automatizables)</td>
+    </tr>
+    <tr>
+      <td>Formato de datos soportados</td>
+      <td>Amplio (shapefiles, GeoJSON, rasters, etc.)</td>
+      <td>Con paquetes como sf soporta múltiples formatos</td>
+    </tr>
+    <tr>
+      <td>Interactividad</td>
+      <td>Limitada (plugins específicos)</td>
+      <td>Con paquetes como leaflet o ggiraph puede ser interactivo</td>
+    </tr>
+    <tr>
+      <td>Ideal para</td>
+      <td>Usuarios que prefieren interfaces visuales y análisis espacial clásico</td>
+      <td>Analistas y programadores que integran mapas con análisis y visualización</td>
+    </tr>
+  </tbody>
+</table>
 
 
 

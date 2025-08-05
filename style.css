@@ -170,7 +170,7 @@ main {
   }
 
   .section-card {
-    background-color: #003366; /* azul oscuro */
+    background-color: #0b2545; /* azul oscuro */
     color: white;
     border-radius: 12px;
     padding: 1.5rem;
@@ -201,4 +201,72 @@ main {
   height: 100%;
   margin: 0;
 }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+  background-color: #669bbc; /* fondo azul */
+  border-radius: 20px;
+  overflow: hidden; /* para que el border-radius funcione bien */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  color: white; /* texto blanco para contraste */
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.75em;
+  color: black;
+  text-align: left;
+  background-color: transparent; /* para que tome el fondo de la tabla */
+}
+
+thead {
+  background-color: rgba(255,255,255,0.2); /* encabezado semitransparente */
+  font-weight: bold;
+}
+
+code {
+  background-color: #f4acb7;
+  padding: 0.1em 0.3em;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+.btn-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #003366;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+  z-index: 999;
+}
+
+.btn-top:hover {
+  background: #024a9f;
+}
+
+body {
+  background-image: url('data-viz/4605.jpg');
+  background-size: cover;       /* Hace que la imagen cubra todo el área */
+  background-position: center;  /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que se repita */
+  background-attachment: fixed; /* Hace que la imagen quede fija al hacer scroll (opcional) */
+}
+
+h2, h3 {
+  background-color: #0b2545; /* azul oscuro */
+  color: white;
+  padding: 0.4em 0.8em;
+  border-radius: 6px;
+  display: inline-block; /* para que el fondo quede ajustado al texto */
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4); /* sombra sutil para destacar */
+}
+
 
