@@ -206,7 +206,7 @@ table {
   border-collapse: collapse;
   width: 100%;
   margin: 1em 0;
-  background-color: #669bbc; /* fondo azul */
+  background-color: #fff; /* fondo azul */
   border-radius: 20px;
   overflow: hidden; /* para que el border-radius funcione bien */
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
